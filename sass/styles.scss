@@ -16,7 +16,7 @@ section {
     grid-template-columns: 1fr 1fr;
   }
 
-  &.first-row {
+  &.firs-row {
     grid-template-rows: 1fr;
   }
 
@@ -26,7 +26,7 @@ section {
 }
 
 img {
-  width: 150%;
+  width: 120%;
 }
 
 .one-column {
@@ -44,7 +44,14 @@ img {
   margin-top: $primary-margin;
 }
 
+.first-row {
+  color: $secondary-color;
+  background-color: $secondary-color;
+  text-align: center;
+}
+
 .second-row {
   color: $secondary-color;
+  background-color: $secondary-color;
   text-align: center;
 }
