@@ -2,8 +2,6 @@
 @import "_includes/variables.scss";
 @import "_includes/mixins.scss";
 
-body {}
-
 section {
   // ON PEUT CALCULER DES CHOSES EN PURE CSS
   height: 100vh;
@@ -17,6 +15,12 @@ section {
   &.two-columns {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.cursor {
+  width: 40px;
+  weight: 40px;
+  cursor: none;
 }
 
 .one-column {
