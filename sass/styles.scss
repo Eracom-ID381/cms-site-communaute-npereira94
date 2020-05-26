@@ -40,7 +40,8 @@ img {
 .section-title {
   font-style: $primary-font;
   color: $secondary-color;
-  text-align: center;
+  margin-top: $secondary-margin;
+  margin-left: $primary-margin;
 }
 
 .first-row {
