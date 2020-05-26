@@ -2,10 +2,6 @@
 @import "_includes/variables.scss";
 @import "_includes/mixins.scss";
 
-body {
-  cursor: url("asssets/images/patte.png");
-}
-
 section {
   // ON PEUT CALCULER DES CHOSES EN PURE CSS
   height: 100vh;
@@ -19,6 +15,18 @@ section {
   &.two-columns {
     grid-template-columns: 1fr 1fr;
   }
+
+  &.first-row {
+    grid-template-rows: 1fr;
+  }
+
+  &.second-row {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+img {
+  width: 150%;
 }
 
 .one-column {
@@ -38,4 +46,5 @@ section {
 
 .second-row {
   color: $secondary-color;
+  text-align: center;
 }
