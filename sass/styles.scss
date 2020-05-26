@@ -16,5 +16,24 @@ section {
 
   &.two-columns {
     grid-template-columns: 1fr 1fr;
+
+    .first-column {
+      order: 1;
+    }
+
+    .first-column {
+      order: 2;
+    }
   }
+}
+
+.one-column {
+  background-color: $primary-color;
+}
+
+.section-title {
+  font-style: $primary-font;
+  color: $secondary-color;
+  margin-left: $primary-position;
+  margin-top: $primary-position;
 }
