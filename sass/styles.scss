@@ -15,25 +15,26 @@ section {
   }
 
   &.two-columns {
+    background-image: url("assets/images/psychogoat.png");
     background: purple;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 
     .center-content {
-      background: white;
+      background: $secondary-color;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    img {
+      width: 200%;
     }
 
     .transparent {
       background: transparent;
     }
   }
-}
-
-img {
-  width: 120%;
 }
 
 .one-column {
@@ -47,5 +48,4 @@ img {
 .section-title {
   font-style: $primary-font;
   color: $third-color;
-  text-align: $primary-position;
 }
