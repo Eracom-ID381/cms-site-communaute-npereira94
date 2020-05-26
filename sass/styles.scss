@@ -15,7 +15,6 @@ section {
   }
 
   &.two-columns {
-    background-image: url("assets/images/psychogoat.png");
     background: purple;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -27,9 +26,7 @@ section {
       justify-content: center;
     }
 
-    img {
-      width: 200%;
-    }
+    img {}
 
     .transparent {
       background: transparent;
