@@ -9,19 +9,26 @@ section {
   display: grid;
 
   &.one-column {
-    grid-template-columns: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &.two-columns {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  &.firs-row {
-    grid-template-rows: 1fr;
-  }
-
-  &.second-row {
+    background: purple;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    .center-content {
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .transparent {
+      background: transparent;
+    }
   }
 }
 
@@ -34,23 +41,11 @@ img {
 }
 
 .two-columns {
-  background-color: $primary-color;
+  background-color: $secondary-color;
 }
 
 .section-title {
   font-style: $primary-font;
-  color: $secondary-color;
+  color: $third-color;
   text-align: $primary-position;
-}
-
-.first-row {
-  color: $secondary-color;
-  background-color: $secondary-color;
-  text-align: center;
-}
-
-.second-row {
-  color: $secondary-color;
-  background-color: $secondary-color;
-  text-align: center;
 }
